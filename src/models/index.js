@@ -7,7 +7,7 @@ const userModel = require('./user-model')
 const myRecords = require('./my-records')
 
 
-const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' : process.env.DATABASE_URL || "postgres://ibrahimoqoul:LTtXdr7orHvspVVmknXayOHUFjgkSUum@dpg-celcsoda4991ihjoummg-a/covid"; // npm i sqlite3
+const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' : process.env.DATABASE_URL ; // npm i sqlite3
 
 let sequelizeOptions = process.env.NODE_ENV === 'production' ? {
     dialectOptions: {
